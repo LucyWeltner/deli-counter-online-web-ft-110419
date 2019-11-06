@@ -1,6 +1,6 @@
 katz_deli = []
 def line(array)
-  line = "The line is currently "
+  line = "The line is currently: "
   if array.size > 0 
     array.each_with_index do |name, index|
       line = line + "#{index + 1}. #{name} "
