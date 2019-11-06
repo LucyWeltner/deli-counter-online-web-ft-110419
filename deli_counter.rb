@@ -1,7 +1,9 @@
 katz_deli = []
 def line(array)
+  line = "The line is currently "
   if array.size > 0 
-    puts array 
+    array.each_with_index do |name, index|
+      line = line + "#{index + 1}. #{name} "
   else
     puts "The line is currently empty."
   end
