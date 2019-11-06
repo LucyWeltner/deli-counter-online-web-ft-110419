@@ -5,7 +5,7 @@ def line(array)
     array.each_with_index do |name, index|
       line = line + "#{index + 1}. #{name} "
     end
-    puts line.chomp
+    puts line.chop
   else
     puts "The line is currently empty."
   end
